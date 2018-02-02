@@ -1,4 +1,5 @@
 
+
 # BURSA TRADING MANUAL
 ---
 ### TO SELL ERC20 TOKENS ON BURSA:
@@ -8,7 +9,7 @@
 
 #### 2. There are two ways to sell tokens on BURSA:
 ---
-##### 2.1. Place sell order on BURSA  (FREE, 40-90000 gas)
+### 2.1. Place sell order on BURSA  (FREE, 40-90000 gas)
 1. Call     **willsellFindSpot(token)**, token address as argument.
 2. Use returned value **spot** in the next call.
 3. Execute  **willsell(amount, token, price_each, spot)**:
@@ -18,7 +19,7 @@
      * **spot**   - the place in storage to save our order, returned from the previous call
 4. Wait until someone fills your order! **Sold** event will be fired.
 ---
-##### 2.2. Fill existing sell order (0.0001 ether fee, 40-90000 gas, 1st TRADE FOR FREE)
+### 2.2. Fill existing sell order (0.0001 ether fee, 40-90000 gas, 1st TRADE FOR FREE)
 
 1. Call **findBestSell(token, min_trade_amount)**:
 Arguments:
@@ -47,7 +48,8 @@ Arguments:
  * Adding value to **willbuy()** or **buy()** method.
 
 #### 2. There are two ways to buy tokens on BURSA:
-##### 2.1. Place buy order on BURSA  (FREE, 40-90000 gas)
+---
+### 2.1. Place buy order on BURSA  (FREE, 40-90000 gas)
 1. Call     **willbuyFindSpot(token)**, token address as argument.
 2. Use returned value **spot** in the next call.
 3. Execute  **willbuy(amount, token, price_each, spot)**:
@@ -58,8 +60,8 @@ Arguments:
                  from the previous call.
 
 4. Wait until someone fills your order! **Sold** event will be fired.
-
-##### 2.2. Fill existing buy order  (0.0001 ether FEE, 40-90000 gas, 1st TRADE FOR FREE!)
+---
+### 2.2. Fill existing buy order  (0.0001 ether FEE, 40-90000 gas, 1st TRADE FOR FREE!)
 1. Call **findBestBuy(token, min_trade_amount)**
 
     Arguments:
@@ -94,3 +96,7 @@ Placing orders is free on BURSA.  Using methods **buy()** or **sell()** is free 
 ---
 
 **[BURSA original repo](https://github.com/termslang/bursadex)**
+### BURSA abi:
+```js
+ [{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"price_each","type":"uint256"},{"name":"spot","type":"uint256"}],"name":"willbuy","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"updateAvailable","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"withdraw","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"user","type":"address"}],"name":"balanceApprovedForToken","outputs":[{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"user","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"min_price_each","type":"uint256"},{"name":"order","type":"uint256"},{"name":"frontend_refund","type":"address"}],"name":"sell","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"price_each","type":"uint256"},{"name":"spot","type":"uint256"}],"name":"willsell","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"deposit","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"}],"name":"willsellFindSpot","outputs":[{"name":"spot","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"}],"name":"willbuyFindSpot","outputs":[{"name":"spot","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"min_trade_amount","type":"uint256"}],"name":"findBestBuy","outputs":[{"name":"order","type":"uint256"},{"name":"volume","type":"uint256"},{"name":"price","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"min_trade_amount","type":"uint256"}],"name":"findBestSell","outputs":[{"name":"order","type":"uint256"},{"name":"volume","type":"uint256"},{"name":"price","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"max_price_each","type":"uint256"},{"name":"order","type":"uint256"},{"name":"frontend_refund","type":"address"}],"name":"buy","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"token","type":"address"},{"indexed":false,"name":"price_each","type":"uint256"},{"indexed":false,"name":"buyer","type":"address"},{"indexed":false,"name":"seller","type":"address"}],"name":"Sold","type":"event"}
+```
