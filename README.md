@@ -7,7 +7,7 @@
 #### 1. Approve your ERC20 tokens.
 **DO NOT TRANSFER TOKENS TO BURSA!** Just execute **approve()** method on contract of the token you want to trade. You can check the tradable amount of a token by calling **balanceApprovedForToken()** method on BURSA contract.
 
-**NOTE:** The amounts of tokens are represented the way they are stored on the blockchain. That means, if you have 10 tokens, and the token has 18 decimals, the amount of tokens stored will be 10 + 1e18, i.e. 10000000000000000000 (10 + 18 zeroes appended). Prices are always stored with 18 decimals, regardless the decimals parameter of the token.
+**NOTE:** The amounts of tokens are represented the way they are stored on the blockchain. That means, if you have 10 tokens, and the token has 18 decimals, the amount of tokens stored will be 10 + 1e18 = 10000000000000000000 (10 + 18 zeroes appended). Prices are always stored with 18 decimals, regardless token's decimals.
 
 
 #### 2. There are two ways to sell tokens on BURSA:
