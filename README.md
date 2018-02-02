@@ -9,7 +9,7 @@
 
 #### 2. There are two ways to sell tokens on BURSA:
 ---
-### 2.1. Place sell order on BURSA  (FREE, 40-90000 gas)
+### 2.1. Place sell order on BURSA  (FREE)
 1. Call     **willsellFindSpot(token)**, token address as argument.
 2. Use returned value **spot** in the next call.
 3. Execute  **willsell(amount, token, price_each, spot)**:
@@ -19,7 +19,7 @@
      * **spot**   - the place in storage to save our order, returned from the previous call
 4. Wait until someone fills your order! **Sold** event will be fired.
 ---
-### 2.2. Fill existing sell order (0.0001 ether fee, 40-90000 gas, 1st TRADE FOR FREE)
+### 2.2. Fill existing sell order (0.0001 ether fee, 1st TRADE FOR FREE)
 
 1. Call **findBestSell(token, min_trade_amount)**:
 Arguments:
@@ -49,7 +49,7 @@ Arguments:
 
 #### 2. There are two ways to buy tokens on BURSA:
 ---
-### 2.1. Place buy order on BURSA  (FREE, 40-90000 gas)
+### 2.1. Place buy order on BURSA  (FREE)
 1. Call     **willbuyFindSpot(token)**, token address as argument.
 2. Use returned value **spot** in the next call.
 3. Execute  **willbuy(amount, token, price_each, spot)**:
@@ -61,7 +61,7 @@ Arguments:
 
 4. Wait until someone fills your order! **Sold** event will be fired.
 ---
-### 2.2. Fill existing buy order  (0.0001 ether FEE, 40-90000 gas, 1st TRADE FOR FREE!)
+### 2.2. Fill existing buy order  (0.0001 ether FEE, 1st TRADE FOR FREE!)
 1. Call **findBestBuy(token, min_trade_amount)**
 
     Arguments:
