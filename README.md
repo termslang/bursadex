@@ -89,6 +89,9 @@ Arguments:
 ### HANDLE YOUR TRADING ACCOUNT:
 Withdraw your money using **withdraw()** method.
 
+### CANCELLING YOUR ORDER:
+You can always cancel your own order by executing it from the address it was placed. It's free and costs little gas. Uncovered orders may be cancelled automatically in the process of trading.
+
 ---
 
 
