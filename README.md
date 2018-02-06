@@ -1,6 +1,6 @@
 
+**[bursadex.eth](https://etherscan.io/address/bursadex.eth)** # BURSA TRADING MANUAL
 
-# BURSA TRADING MANUAL
 ---
 ### TO SELL ERC20 TOKENS ON BURSA:
 
@@ -101,7 +101,7 @@ Placing orders is free on BURSA.  Using methods **buy()** or **sell()** is free 
 
 ---
 
-**[BURSA on Ethereum mainnet](https://etherscan.io/address/0xd3e64580cb5b4d079514dcf2996dea6095a57e30#readContract)**
+**[BURSA on Ethereum mainnet](https://etherscan.io/address/bursadex.eth)**
 
 **[BURSA on ropsten](https://ropsten.etherscan.io/address/0xC9d78ebd4D11d0Dd6FE16953EfE6534A2cc0A9c7)**
 ### BURSA abi:
