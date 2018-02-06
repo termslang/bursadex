@@ -1,5 +1,6 @@
 
-**[bursadex.eth](https://etherscan.io/address/bursadex.eth)** # BURSA TRADING MANUAL
+# BURSA TRADING MANUAL
+**[ENS:bursadex.eth](https://etherscan.io/address/bursadex.eth)**
 
 ---
 ### TO SELL ERC20 TOKENS ON BURSA:
