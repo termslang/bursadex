@@ -16,7 +16,7 @@
 
 
 BURSA CONTRACT ABI:
-[{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"price_each","type":"uint256"},{"name":"bid_order_spot","type":"uint256"}],"name":"willbuy","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"updateAvailable","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"min_trade_amount","type":"uint256"}],"name":"findBestBid","outputs":[{"name":"bid_order","type":"uint256"},{"name":"volume","type":"uint256"},{"name":"price","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"withdraw","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"user","type":"address"}],"name":"balanceApprovedForToken","outputs":[{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"user","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"ask_order","type":"uint256"}],"name":"willsellInfo","outputs":[{"name":"user","type":"address"},{"name":"price","type":"uint256"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"min_price_each","type":"uint256"},{"name":"bid_orders","type":"uint256[]"},{"name":"rebate_address","type":"address"}],"name":"sellAll","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"min_price_each","type":"uint256"},{"name":"bid_order","type":"uint256"},{"name":"rebate_address","type":"address"}],"name":"sell","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"min_trade_amount","type":"uint256"}],"name":"findBestAsk","outputs":[{"name":"ask_order","type":"uint256"},{"name":"volume","type":"uint256"},{"name":"price","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"price_each","type":"uint256"},{"name":"ask_order_spot","type":"uint256"}],"name":"willsell","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"max_price_each","type":"uint256"},{"name":"ask_orders","type":"uint256[]"},{"name":"rebate_address","type":"address"}],"name":"buyAll","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"bid_order","type":"uint256"}],"name":"willbuyInfo","outputs":[{"name":"user","type":"address"},{"name":"price","type":"uint256"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"deposit","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"}],"name":"willsellFindSpot","outputs":[{"name":"ask_order_spot","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"}],"name":"willbuyFindSpot","outputs":[{"name":"bid_order_spot","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"max_price_each","type":"uint256"},{"name":"ask_order","type":"uint256"},{"name":"rebate_address","type":"address"}],"name":"buy","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"token","type":"address"},{"indexed":false,"name":"price_each","type":"uint256"},{"indexed":false,"name":"buyer","type":"address"},{"indexed":false,"name":"seller","type":"address"}],"name":"Trade","type":"event"}]
+[{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"price_each","type":"uint256"},{"name":"bid_order_spot","type":"uint256"}],"name":"willbuy","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[],"name":"updateAvailable","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"min_trade_amount","type":"uint256"}],"name":"findBestBid","outputs":[{"name":"bid_order","type":"uint256"},{"name":"volume","type":"uint256"},{"name":"price","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"}],"name":"withdraw","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"user","type":"address"}],"name":"balanceApprovedForToken","outputs":[{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"user","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"ask_order","type":"uint256"}],"name":"willsellInfo","outputs":[{"name":"user","type":"address"},{"name":"price","type":"uint256"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"min_price_each","type":"uint256"},{"name":"bid_orders","type":"uint256[]"},{"name":"rebate_address","type":"address"}],"name":"sellAll","outputs":[{"name":"new_bid_order_amount","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"min_price_each","type":"uint256"},{"name":"bid_order","type":"uint256"},{"name":"rebate_address","type":"address"}],"name":"sell","outputs":[{"name":"fact_amount","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"min_trade_amount","type":"uint256"}],"name":"findBestAsk","outputs":[{"name":"ask_order","type":"uint256"},{"name":"volume","type":"uint256"},{"name":"price","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"price_each","type":"uint256"},{"name":"ask_order_spot","type":"uint256"}],"name":"willsell","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"max_price_each","type":"uint256"},{"name":"ask_orders","type":"uint256[]"},{"name":"rebate_address","type":"address"}],"name":"buyAll","outputs":[{"name":"amount_left","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"},{"name":"bid_order","type":"uint256"}],"name":"willbuyInfo","outputs":[{"name":"user","type":"address"},{"name":"price","type":"uint256"},{"name":"amount","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"deposit","outputs":[{"name":"","type":"bool"}],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"}],"name":"willsellFindSpot","outputs":[{"name":"ask_order_spot","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"token","type":"address"}],"name":"willbuyFindSpot","outputs":[{"name":"bid_order_spot","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"amount","type":"uint256"},{"name":"token","type":"address"},{"name":"max_price_each","type":"uint256"},{"name":"ask_order","type":"uint256"},{"name":"rebate_address","type":"address"}],"name":"buy","outputs":[{"name":"fact_amount","type":"uint256"}],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"token","type":"address"},{"indexed":false,"name":"price_each","type":"uint256"},{"indexed":false,"name":"buyer","type":"address"},{"indexed":false,"name":"seller","type":"address"}],"name":"Trade","type":"event"}]
 
 
 */
@@ -50,7 +50,7 @@ contract Bursa {
   }
 
 
-  function buy(uint256 amount, address token, uint256 max_price_each, uint256 ask_order, address rebate_address) public payable returns (bool) {
+  function buy(uint256 amount, address token, uint256 max_price_each, uint256 ask_order, address rebate_address) public payable returns (uint256 fact_amount) {
     if (msg.value != 0) funds[msg.sender] += msg.value;
     if ((willsellPrice[token][ask_order] > max_price_each && max_price_each != 0)
       || amount == 0
@@ -65,17 +65,17 @@ contract Bursa {
     if (buyer == seller) {
       if (amount >= willsellAmount[token][ask_order]) {
         willsellAmount[token][ask_order] = 0;
-        return true;
+        return amount;
       }
       willsellAmount[token][ask_order] -= amount;
-      return true;
+      return amount;
     }
     // Validate amount
     uint256 volume = willsellVolume(token, ask_order);
     if (amount > volume) {
       if (volume == 0) {
         willsellAmount[token][ask_order] = 0;
-        return false;
+        return 0;
       }
       amount = volume;
     }
@@ -94,12 +94,12 @@ contract Bursa {
       amount = pay * 1e18 / willsellPrice[token][ask_order];
     }
     // Trade
-    if (!Bursa(token).transferFrom(seller, buyer, amount)) return false;
+    if (!Bursa(token).transferFrom(seller, buyer, amount)) return 0;
     funds[seller] = funds[seller] + pay;
     funds[buyer] = funds[buyer] - pay - fee;
+    funds[ceo] = funds[ceo] + fee;
     if (fee == 1e15) funds[rebate_address] = funds[rebate_address] + 3e14;
     if (traded[msg.sender] == false) {
-      funds[ceo] = funds[ceo] + pay / 20;
       traded[msg.sender] = true;
     }
     // Drop uncovered order
@@ -108,11 +108,11 @@ contract Bursa {
     }
     else willsellAmount[token][ask_order] -= amount;
     Trade(amount, token, willsellPrice[token][ask_order], buyer, seller);
-    return true;
+    return amount;
   }
 
 
-  function sell(uint256 amount, address token, uint256 min_price_each, uint256 bid_order, address rebate_address) public payable returns (bool) {
+  function sell(uint256 amount, address token, uint256 min_price_each, uint256 bid_order, address rebate_address) public payable returns (uint256 fact_amount) {
     if (msg.value != 0) funds[msg.sender] += msg.value;
     if (willbuyPrice[token][bid_order] < min_price_each
       || amount == 0
@@ -126,17 +126,17 @@ contract Bursa {
     if (buyer == seller) {
       if (amount >= willbuyAmount[token][bid_order]) {
         willbuyAmount[token][bid_order] = 0;
-        return true;
+        return amount;
       }
       willbuyAmount[token][bid_order] -= amount;
-      return true;
+      return amount;
     }
     // Validate amount
     uint256 volume = willbuyVolume(token, bid_order);
     if (amount > volume) {
       if (volume == 0) {
         willbuyAmount[token][bid_order] = 0;
-        return false;
+        return 0;
       }
       amount = volume;
     }
@@ -150,12 +150,12 @@ contract Bursa {
       else fee = 1e15;
     } // else fee = 0
     // Trade
-    if (!Bursa(token).transferFrom(seller, buyer, amount)) return false;
+    if (!Bursa(token).transferFrom(seller, buyer, amount)) return 0;
     funds[buyer] = funds[buyer] - pay;
     funds[seller] = funds[seller] + pay - fee;
+    funds[ceo] = funds[ceo] + fee;
     if (fee == 1e15) funds[rebate_address] = funds[rebate_address] + 3e14;
     if (traded[msg.sender] == false) {
-      funds[ceo] = funds[ceo] + pay / 20;
       traded[msg.sender] = true;
     }
     // Drop uncovered order
@@ -164,10 +164,10 @@ contract Bursa {
     }
     else willbuyAmount[token][bid_order] -= amount;
     Trade(amount, token, willbuyPrice[token][bid_order], buyer, seller);
-    return true;
+    return amount;
   }
 
-// TODO: change your own order
+
   function willbuy(uint256 amount, address token, uint256 price_each, uint256 bid_order_spot) public payable returns (bool) {
     if (msg.value != 0) funds[msg.sender] += msg.value;
     if (updateAvailable != 0
@@ -182,7 +182,7 @@ contract Bursa {
     if (willbuyAmount[token][bid_order_spot] != amount) willbuyAmount[token][bid_order_spot] = amount;
     return true;
   }
-// TODO: change your own order
+
   function willsell(uint256 amount, address token, uint256 price_each, uint256 ask_order_spot) public payable returns (bool) {
     if (msg.value != 0) funds[msg.sender] += msg.value;
     if (updateAvailable != 0
@@ -210,12 +210,30 @@ contract Bursa {
     msg.sender.transfer(amount);
   }
 
-// TODO
-  function buyAll(uint256 amount, address token, uint256 max_price_each, uint256[] ask_orders, address rebate_address) public payable returns (bool) {
-    return true;
+
+  function buyAll(uint256 amount, address token, uint256 max_price_each, uint256[] ask_orders, address rebate_address) public payable returns (uint256 amount_left) {
+    uint256 i;
+    while (amount > 0 || i < ask_orders.length) {
+      uint256 ask_order = ask_orders[i];
+      uint256 a = willsellAmount[token][ask_order];
+      if (a > amount) a = amount;
+      uint256 fact_amount = buy(a, token, max_price_each, ask_order, rebate_address);
+      amount -= fact_amount;
+      ++i;
+    }
+    return amount;
   }
-  function sellAll(uint256 amount, address token, uint256 min_price_each, uint256[] bid_orders, address rebate_address) public payable returns (bool) {
-    return true;
+  function sellAll(uint256 amount, address token, uint256 min_price_each, uint256[] bid_orders, address rebate_address) public payable returns (uint256 new_bid_order_amount) {
+    uint256 i;
+    while (amount > 0 || i < bid_orders.length) {
+      uint256 ask_order = bid_orders[i];
+      uint256 a = willbuyAmount[token][ask_order];
+      if (a > amount) a = amount;
+      uint256 fact_amount = buy(a, token, min_price_each, ask_order, rebate_address);
+      amount -= fact_amount;
+      ++i;
+    }
+    return amount;
   }
 
 
@@ -419,7 +437,7 @@ contract Bursa {
   }
 
   function suicide() public {
-    // TODO: suicide after half year since rolling an update
+    // TODO: can suicide after half year since rolling an update
     //      remove ceo fee
   }
 
