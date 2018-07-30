@@ -226,10 +226,10 @@ contract Bursa {
   function sellAll(uint256 amount, address token, uint256 min_price_each, uint256[] bid_orders, address rebate_address) public payable returns (uint256 new_bid_order_amount) {
     uint256 i;
     while (amount > 0 || i < bid_orders.length) {
-      uint256 ask_order = bid_orders[i];
-      uint256 a = willbuyAmount[token][ask_order];
+      uint256 bid_order = bid_orders[i];
+      uint256 a = willbuyAmount[token][bid_order];
       if (a > amount) a = amount;
-      uint256 fact_amount = buy(a, token, min_price_each, ask_order, rebate_address);
+      uint256 fact_amount = sell(a, token, min_price_each, bid_order, rebate_address);
       amount -= fact_amount;
       ++i;
     }
